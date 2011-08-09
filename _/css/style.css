@@ -9,7 +9,7 @@
 	
 -------------------------------------------------------------------------------*/
 
-/* Let's default this puppy out
+/* Defaults
 -------------------------------------------------------------------------------*/
 
 html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
@@ -145,8 +145,17 @@ a:link {-webkit-tap-highlight-color: #fcd700;}
 ins {background-color: #fcd700; color: #000; text-decoration: none;}
 mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}
 
-
-
+/* http://designfestival.com/when-and-how-to-visually-hide-content/ */
+.hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
 
 
 /* Print styles!
